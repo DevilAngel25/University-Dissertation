@@ -1,0 +1,27 @@
+I used Unreal Engine Version: 4.7
+
+The project as it stands does not have a fluid way of displaying my results but 
+i shall explain how to obtain them.
+
+To obtain results:
+	1. Open the project.
+	2. Navigate to the folder 'Content->Blueprints->Player'.
+	3. In this folder select PlanePlayer.
+	4. This is where i have all of my calculations.
+	5. The Variable you need to change is 'GroundSpeed'.
+	6. You can find this under the tabs 'Variables->Atmosphere'.
+	7. I used Ground Speeds of '10, 100, 500, 1000, 1500 and 2000' to gain my results.
+	8. Next navigate to the 'Gold Comment Box' at the top of the 'Event Graph'.
+	9. Here you can change the starting 'Altitude' and the type of 'Material' the object will use.
+	10. Now go down the 'Event Graph', you will see two 'Green Comment Boxes', these control the speed of the object.
+	11. Keep moving down the 'Event Graph' until you see a 'Blue Comment Box'.
+	12. 'Double-Click' the node 'FindTotalTemperature', this is the node which contants the main calculations.
+	13. This node contains the main logic for my results. Navigate to the right until you find an 'Orange Comment Box'.
+	14. Add a 'Break Point' on this node.
+	15. Now set the 'Ground Speed', Make sure you have the 'Altitude' and 'Material' you want.
+	16. Finally select the 'Play' button.
+	17. This will stop the code at the 'Break Point'. If you hover you mouse over the nodes to the left you will see there current values.
+
+This is how I had to recieve my results. For every new result I would change the 'Altitude' and 'Material', 
+Then change the 'GroundSpeed' for as many results I needed for that 'Altitude and 'Material' type.
+Not the best method but the only thing i could do at the time.
